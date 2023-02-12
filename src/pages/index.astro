@@ -1,24 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 ---
 
 <Layout>
-	<div id="wrapper" class="mx-auto max-w-[600px] md:max-w-[1300px] mt-16 md:mt-[150px] px-10 relative">
-		<img id="HeroImage" src="../assets/heroImg1.png" alt="hero image" class="absolute -z-0 right-[-345px] md:top-[-280px] top-[-190px]">
+	<div id="wrapper" class="mx-auto w-full  md:max-w-[1300px] mt-16 md:mt-[150px] px-2 md:px-10 relative">
+		<img id="HeroImage" src="../assets/heroImg1.png" alt="hero image" class="hidden md:block  absolute -z-0 right-[-345px] md:top-[-280px] top-[-190px]">
 
-		<main class="relative z-20 flex flex-col md:flex-row gap-10">
+		<main class="mx-auto relative z-20 flex flex-col md:flex-row gap-10">
 		<div id="left-col" class=" w-full md:w-6/12">
 			<section id="hero">
 				<h1 class="uppercase font-bold text-6xl font-playfair mb-2">Come Get Lost in the Madness!</h1> 
-				<span class="text-gradient uppercase font-black text-7xl">ECSTASY23 </span>
+				<span class="text-gradient uppercase font-black text-6xl md:text-7xl">ECSTASY23 </span>
 				<p class="font-light text-3xl mt-2">Cultural Festival</p>
 			</section>
 			<p class="instructions font-poppins w-full lg:w-[90%]">
 				Experience the vibrant atmosphere of <strong>ECSTASY 2023</strong>, a college cultural festival with performances from talented artists, interactive activities, and the chance to explore new trends. Join us and let the good times roll!
 			</p>
 	</div>
-	<div id="right-col" class="grow grid grid-cols-1 lg:grid-cols-2 gap-[1.2em] md:gap-[1em]">
+	<div id="right-col" class="grow flex flex-col md:grid md:grid-cols-1 lg:grid-cols-2 gap-[1.2em] md:gap-[1em]">
 			<div class="link-card card1 h-auto items-center">
 						<a href="#">
 							<h2>
