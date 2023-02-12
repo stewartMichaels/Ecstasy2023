@@ -1,9 +1,6 @@
 ---
-export interface Props {
-	title: string;
-}
 
-const { title } = Astro.props;
+
 ---
 
 <!DOCTYPE html>
@@ -13,9 +10,23 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>Ecstasy23</title>
+		 <link rel="preconnect" href="https://fonts.googleapis.com">
+    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
 	</head>
 	<body>
+		<header id="nav-container" class="max-w-[600px] md:max-w-[1300px] mx-auto flex justify-between items-center p-10 relative z-20">
+			<a href="#" class="text-3xl font-playfair">Ecstasy23</a>
+			<nav>
+				<ul class=" hidden md:flex gap-16 font-poppins text-white font-black">
+					<li><a href="#">EVENTS</a></li>
+					<li><a href="#">CONTESTS</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+			</nav>
+		</header>
 		<slot />
 	</body>
 </html>
