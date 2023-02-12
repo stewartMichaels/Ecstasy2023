@@ -18,8 +18,8 @@ import Layout from '../layouts/Layout.astro';
 			</p>
 	</div>
 	<div id="right-col" class="grow flex flex-col md:grid md:grid-cols-1 lg:grid-cols-2 gap-[1.2em] md:gap-[1em]">
-			<div class="link-card card1 h-auto items-center">
-						<a href="#">
+			<div class="link-card card1  items-end">
+						<a href="./events">
 							<h2>
 								Events
 								<span>&rarr;</span>
@@ -29,8 +29,8 @@ import Layout from '../layouts/Layout.astro';
 							</p>
 						</a>
 			</div>
-			<div class="link-card card2 h-auto items-center">
-						<a href="#">
+			<div class="link-card card2 h-auto items-end">
+						<a href="./contests">
 							<h2>
 								Contests
 								<span>&rarr;</span>
@@ -40,8 +40,8 @@ import Layout from '../layouts/Layout.astro';
 							</p>
 						</a>
 			</div>
-			<div class="link-card card3 h-auto items-center">
-						<a href="#">
+			<div class="link-card card3 h-auto items-end">
+						<a href="./workshops">
 							<h2>
 								Workshops
 								<span>&rarr;</span>
@@ -103,9 +103,9 @@ import Layout from '../layouts/Layout.astro';
 		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
 	}
-
 	.link-card > a {
 		width: 100%;
+		border: 2px solid black;
 		text-decoration: none;
 		line-height: 1.4;
 		padding: 1rem 1.3rem;
