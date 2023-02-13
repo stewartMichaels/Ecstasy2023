@@ -1,0 +1,28 @@
+---
+export interface Props {
+	contestNo: string;
+	title: string;
+	date: string;
+	venue: string;
+	coordinators?: string[];
+	regLink?: string;
+}
+
+const { contestNo, title, date, venue, coordinators, regLink = "#" } = Astro.props;
+---
+
+<section id={contestNo} class="font-poppins border border-black px-2 py-1 rounded-lg bg-red-100">
+	<p class="text-center"><strong>CONTEST {contestNo}</strong></p>
+	<h1 id="title">Title: {title}</h1>
+	<p id="date">Date: {date}</p>
+	<p id="venue">Venue: {venue}</p>
+	<p id="coordinators">Coordinators: {coordinators.map((member)=>{
+			if(coordinators.indexOf(member)!==0){
+				return (`, ${member}`);
+			}else{
+				return (`${member}`);
+			}
+		}
+	)}
+	</p>
+</section>
