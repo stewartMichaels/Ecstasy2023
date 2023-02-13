@@ -10,10 +10,15 @@ export interface Props {
 const { eventNo, title, date, venue, regLink = "#" } = Astro.props;
 ---
 
-<section id={eventNo} class="font-poppins border border-black px-2 py-1 rounded-lg bg-red-100">
+<section id={eventNo} class="font-poppins border-2 border-black px-2 py-1 rounded-lg bg-red-100 hover:scale-105">
 	<p class="text-center"><strong>EVENT {eventNo}</strong></p>
 	<h1 id="title">Title: {title}</h1>
 	<p id="date">Date: {date}</p>
 	<p id="venue">Venue: {venue}</p>
 </section>
 
+<style>
+	section{
+		transition: transform 0.1s ease-in;
+	}
+</style>
