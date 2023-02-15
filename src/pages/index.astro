@@ -13,9 +13,9 @@ import Layout from "../layouts/Layout.astro";
     >
       <img
         id="HeroImage"
-        src="/assets/heroImg1.png"
+        src="/assets/marathon3.png"
         alt="hero image"
-        class="md:block -z-0 h-[800px] w-[800px]"
+        class="md:block -z-0 h-[800px] w-[800px] backdrop-blur-md"
       />
     </div>
 
@@ -42,12 +42,11 @@ import Layout from "../layouts/Layout.astro";
       </div>
       <div
         id="right-col"
-        class="grow flex flex-col md:grid md:grid-cols-1 lg:grid-cols-2 gap-[0.5em] md:gap-[1em]"
-      >
-        <div class="link-card card1 items-end">
+        class="grow flex flex-col md:grid md:grid-cols-1 lg:grid-cols-2 gap-[0.5em] md:gap-[1em]">
+        <div class="link-card card1 items-end relative">
           <a href="./events">
             <h2>
-              Events
+              Cultural Events
               <span>&rarr;</span>
             </h2>
             <p>Participate in Variety of Events!</p>
@@ -62,10 +61,10 @@ import Layout from "../layouts/Layout.astro";
             <p>Participate in Variety of Events!</p>
           </a>
         </div>
-        <div class="link-card card3 h-auto items-end">
-          <a href="./workshops">
+        <div class="link-card card3 h-auto items-end overflow-hidden relative">
+          <a href="./sports" class="">
             <h2>
-              Workshops
+              Sports Events
               <span>&rarr;</span>
             </h2>
             <p>Participate in Variety of Events!</p>
@@ -113,19 +112,30 @@ import Layout from "../layouts/Layout.astro";
   }
   .card1 {
     grid-area: left;
+    background-image: url('./assets/marathon3.png');
+    background-position: -50px 0px;
+    background-repeat: no-repeat;
   }
-
+  .card2{
+     background-image: url('./assets/marathon2.png');
+     background-position: 0px -50px;
+  }
+  .card3{
+     background-image: url('./assets/shotPut.png');
+     background-position: 0px -50px;
+  }
+ 
   /*PreDefined */
   .link-card {
     list-style: none;
     display: flex;
     padding: 0.25rem;
+    object-fit: contain;
     background-color: white;
-    background-image: none;
-    background-size: 400%;
+    background-size: 150%;
     border-radius: 0.6rem;
-    background-position: 100%;
     transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    transition: background-size 0.2s ease-in-out;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
       0 2px 4px -2px rgba(0, 0, 0, 0.1);
   }
@@ -151,8 +161,8 @@ import Layout from "../layouts/Layout.astro";
     color: #444;
   }
   .link-card:is(:hover, :focus-within) {
-    background-position: 0;
-    background-image: var(--accent-gradient);
+    /* background-position: 0%; */
+    background-size: 200%;
   }
   .link-card:is(:hover, :focus-within) h2 {
     color: rgb(var(--accent));
