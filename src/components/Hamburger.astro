@@ -1,0 +1,52 @@
+---
+
+---
+<button id="hamburger-container" class="md:hidden border-2 border-black rounded-md py-1" aria-controls="primary-navigation" aria-expanded="false">
+	<svg class="hamburger" viewBox="0 0 100 100" width="40" height="30">
+			<rect class="line top" width="80" height="12" x="10" y="25" rx="5"></rect>
+			<rect class="line middle" width="80" height="12" x="10" y="45" rx="5"></rect>
+			<rect class="line bottom" width="80" height="12" x="10" y="65" rx="5"></rect>
+	</svg>
+</button>
+
+<script>
+	const hamburger = document.querySelector('#hamburger-container');
+		hamburger.addEventListener('click',()=>{
+		const isOpened = hamburger.getAttribute('aria-expanded');
+		if(isOpened === 'false'){
+			hamburger.setAttribute('aria-expanded','true');
+		}else{
+			hamburger.setAttribute('aria-expanded','false');
+		}
+	})
+</script>
+
+<style>
+	#hamburger-container .line{
+		transiton:
+			y 300ms ease-in 300ms,
+			rotate 300ms ease-in,
+			opacity 0ms 300ms; 
+			transform-origin: center;
+	}
+
+	#hamburger-container .line{
+		transiton:
+			y 300ms ease-in,
+			rotate 300ms ease-in 300ms,
+			opacity 0ms 300ms; 
+	}
+
+	#hamburger-container[aria-expanded="true"] :is(.top, .bottom){
+		y: 45;
+	}
+	#hamburger-container[aria-expanded="true"] .top{
+		rotate: 45deg;
+	}
+	#hamburger-container[aria-expanded="true"] .middle{
+		opacity: 0;
+	}
+	#hamburger-container[aria-expanded="true"] .bottom{
+		rotate: -45deg;
+	}
+</style>
