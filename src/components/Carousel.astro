@@ -16,7 +16,7 @@
 		<div class="swiper-slide bg-red-500">Slide 7</div>
 	</div>
 	<!-- If we need pagination -->
-	<div class="swiper-pagination"></div>
+	<!-- <div class="swiper-pagination"></div> -->
 
 	<!-- If we need navigation buttons
 	<div class="swiper-button-prev"></div>
@@ -35,12 +35,16 @@
 <script is:inline src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script is:inline>
 	const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  autoplay: true,
-  autoplayDelay: '4000',
-  slidesPerView: "7",
+		// Optional parameters
+		direction: 'horizontal',
+		loop: true,
+		slidesPerView: "7",
+		speed: 1000,
+		autoplay: {
+		delay: 500,
+		disableOnInteraction: false,
+
+ 		},
 
   // If we need pagination
   pagination: {
