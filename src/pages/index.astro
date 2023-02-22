@@ -61,9 +61,26 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </main>
     </div>
-  <div id="secondary-content" class="mt-[7em] md:pt-[5em] z-20">
+  <div id="quote" class="mt-[10em] md:mt-[15em] z-20 min-h-[15em] flex flex-col md:flex-row mx-auto p-5 md:p-10 justify-center gap-10 md:gap-20 items-center">
+    <section id="left-body" class="">
+      <img src="/assets/heroImg1.webp" alt="organizer's image" class="rounded-full md:rounded-lg w-[13em]">
+    </section>
+    <section id="right-body" class="w-full md:w-5/12">
+      <p class="font-playfair italic font-light text-[1.2rem]">
+       <span class="font-black">" </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nulla molestiae error iste magni unde porro voluptas? Sapiente quo enim similique tempora soluta architecto nemo vero qui. Soluta quae corrupti dolorum atque et rerum tempore? Vel quaerat dolore natus excepturi obcaecati suscipit accusantium sequi adipisci commodi consequuntur blanditiis nobis voluptates debitis rerum architecto praesentium <span class="font-black">"</span>
+      </p>
+    </section>
+  </div>
+  <div id="secondary-content" class="md:pt-[3em] z-20">
       <section id="sponsor-container" class="">
-        <Carousel/>
+        <!-- <Carousel/> -->
+        <h1 class="text-center font-playfair text-4xl font-light">Our Sponsors</h1>
+        <div id="sponsor-logo" class="flex justify-center items-center gap-10 lg:gap-20 pt-10 flex-wrap">
+          <img src="/assets/sponsors/sponsor1.png" alt="SBI" class="w-[9rem]">
+          <img src="/assets/sponsors/sponsor2.png" alt="KTM" class="w-[9rem]">
+          <img src="/assets/sponsors/sponsor3.png" alt="JAJABOR" class="w-[9rem]">
+          <img src="/assets/sponsors/sponsor4.png" alt="Royal Enfield" class="w-[9rem]">
+        </div>
       </section>
   </div>
 </Layout>
@@ -72,7 +89,18 @@ import Layout from "../layouts/Layout.astro";
   body {
     overflow-x: hidden;
   }
-
+  #quote{
+    /* background-image: url(/assets/concert.jpg); */
+    background-size: 100%;
+    /* background-position: 0px 450px;
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: brightness(90%); */
+  }
+  #sponsor-logo img{
+    aspect-ratio: 2/2;
+    object-fit: contain;
+  }
   .h1custom {
     font-size: 3rem;
     font-weight: 800;
@@ -165,5 +193,6 @@ import Layout from "../layouts/Layout.astro";
     object-position: center;
     background-repeat: no-repeat;
     filter: grayscale(0%);
+    filter: brightness(90%);
   }
 </style>

@@ -1,6 +1,6 @@
 ---
 import Hamburger from "../components/Hamburger.astro";
-
+import NavLinks from "../components/NavLinks.astro";
 ---
 
 <!DOCTYPE html>
@@ -15,18 +15,11 @@ import Hamburger from "../components/Hamburger.astro";
     	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
 	</head>
-	<body>
+	<body class="bg-teal-100">
 		<header id="nav-container" class="max-w-[600px] md:max-w-[1300px] mx-auto flex justify-between items-center p-3 md:p-10 relative z-20">
 			<a href="/" class="text-3xl font-playfair font-black">Ecstasy23</a>
 			<Hamburger />
-			<nav class="hidden md:block">
-				<ul class="md:flex gap-16 font-poppins text-black font-black">
-					<li><a href="./events">EVENTS</a></li>
-					<li><a href="./contests">CONTESTS</a></li>
-					<li><a href="./about">ABOUT</a></li>
-					<li><a href="./contact">CONTACT</a></li>
-				</ul>
-			</nav>
+			<NavLinks />
 		</header>
 		<slot />
 		<footer class="text-center font-poppins p-10 text-[#64748b]">
@@ -50,4 +43,6 @@ import Hamburger from "../components/Hamburger.astro";
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
+
 </style>
+
