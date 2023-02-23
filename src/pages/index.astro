@@ -88,12 +88,7 @@ import Layout from "../layouts/Layout.astro";
     overflow-x: hidden;
   }
   #quote{
-    /* background-image: url(/assets/concert.jpg); */
     background-size: 100%;
-    /* background-position: 0px 450px;
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1);
-    filter: brightness(90%); */
   }
   #sponsor-logo img{
     aspect-ratio: 2/2;
@@ -186,13 +181,6 @@ import Layout from "../layouts/Layout.astro";
   .link-card:is(:hover, :focus-within) h2 {
     color: #3b82f6;
   }
-  #heroImg-container{
-    background-image: url("/assets/concert.jpg");
-    object-position: center;
-    background-repeat: no-repeat;
-    filter: grayscale(0%);
-    filter: brightness(90%);
-  }
 
   #background-img{
 		position: fixed;
@@ -200,10 +188,10 @@ import Layout from "../layouts/Layout.astro";
 		bottom: 0;
 		height: 100vh;
 		width: 100%;
-		background-image: url("/assets/concert.jpg");
+		background-image: url("/assets/party3.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
-		object-fit: cover;
+		object-fit: contain;
 		background-position: center;
 		filter: grayscale(30%);
 	}
