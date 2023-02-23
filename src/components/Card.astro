@@ -10,7 +10,7 @@ export interface Props {
 const { eventNo, title, date, venue, regLink = "#" } = Astro.props;
 ---
 
-<section id={eventNo} class="font-poppins border-2 border-black px-2 py-1 rounded-lg bg-red-100 hover:scale-105">
+<section id={eventNo} class="font-poppins border-2 px-3 py-2 hover:cursor-pointer  text-slate-400 ">
 	<p class="text-center"><strong>EVENT {eventNo}</strong></p>
 	<h1 id="title">Title: {title}</h1>
 	<p id="date">Date: {date}</p>
@@ -19,6 +19,6 @@ const { eventNo, title, date, venue, regLink = "#" } = Astro.props;
 
 <style>
 	section{
-		transition: transform 0.1s ease-in;
+		backdrop-filter: blur(3px);
 	}
 </style>
