@@ -11,12 +11,12 @@ export interface Props {
 const { contestNo, title, date, venue, coordinators, regLink = "#" } = Astro.props;
 ---
 
-<section id={contestNo} class="font-poppins border-2 px-2 py-1 text-slate-400">
-	<p class="text-center"><strong>CONTEST {contestNo}</strong></p>
-	<h1 id="title">Title: {title}</h1>
-	<p id="date">Date: {date}</p>
-	<p id="venue">Venue: {venue}</p>
-	<p id="coordinators">Coordinators: {coordinators.map((member)=>{
+<section id={contestNo} class="font-poppins border-t-2 border-b-2 px-3 py-2 text-slate-100">
+	<p class="text-center pb-2"><strong>CONTEST {contestNo}</strong></p>
+	<h1 id="title"><span class="text-slate-400">Title:</span> {title}</h1>
+	<p id="date"><span class="text-slate-400">Date:</span> {date}</p>
+	<p id="venue"><span class="text-slate-400">Venue:</span> {venue}</p>
+	<p id="coordinators"><span class="text-slate-400">Coordinators:</span> {coordinators.map((member)=>{
 			if(coordinators.indexOf(member)!==0){
 				return (`, ${member}`);
 			}else{
@@ -29,6 +29,6 @@ const { contestNo, title, date, venue, coordinators, regLink = "#" } = Astro.pro
 
 <style>
 	section{
-		backdrop-filter: blur(2px);
+		backdrop-filter: blur(10px);
 	}
 </style>

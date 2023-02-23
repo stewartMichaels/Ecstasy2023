@@ -9,7 +9,7 @@ import ContestCard from "../../components/ContestCard.astro";
 		<h1 class="text-5xl font-playfair text-center text-white">Explore The Contests</h1>
 	
 		<main class="mt-20">
-			<div id="contest-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 pb-10">
+			<div id="contest-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-10">
 				<ContestCard contestNo="1" title="Quiz" date="12/03/23" venue="Auditorium" coordinators={["Rajarshi Seal","Alien",]}/>
 				<ContestCard contestNo="2" title="Debate" date="12/03/23" venue="Auditorium" coordinators={[]}/>
 				<ContestCard contestNo="3" title="Storytelling" date="12/03/23" venue="Auditorium" coordinators={[]}/>
@@ -38,5 +38,6 @@ import ContestCard from "../../components/ContestCard.astro";
 		object-fit: cover;
 		background-position: center;
 		filter: grayscale(30%);
+		filter: brightness(80%)
 	}
 </style>
