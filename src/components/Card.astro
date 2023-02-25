@@ -7,16 +7,24 @@ export interface Props {
 	regLink?: string;
 }
 
-const { eventNo, title, date, venue, regLink = "#" } = Astro.props;
+const { eventNo, title, date, venue, regLink = null } = Astro.props;
 ---
 
-<section id={eventNo} class="font-poppins border-t-2 border-b-2 px-3 py-2 hover:cursor-pointer  text-slate-100 ">
-	<p class="text-center pb-2"><strong>EVENT {eventNo}</strong></p>
-	<h1 id="title"><span class="text-slate-400">Title:</span> {title}</h1>
-	<p id="date"><span class="text-slate-400">Date:</span> {date}</p>
-	<p id="venue"><span class="text-slate-400">Venue:</span> {venue}</p>
-</section>
+<section id={eventNo} class="font-poppins border-t-2 border-b-2 px-3 py-2 text-slate-100 flex flex-col">
+	<div id="top">
+		<p class="text-center pb-2"><strong>EVENT {eventNo}</strong></p>
+		<h1 id="title" title={title} class="truncate"><span class="text-slate-400">Title:</span> {title}</h1>
+		<p id="date"><span class="text-slate-400">Date:</span> {date}</p>
+		<p id="venue" title={venue} class="truncate"><span class="text-slate-400">Venue:</span> {venue}</p>
 
+	</div>
+	<div id="bottom" class="self-center py-3">
+			{
+			regLink ? <a href={regLink} class="relative self-center bg-slate-300 text-black font-black px-2 py-1 rounded">REGISTER</a>
+			: <a href={regLink} class="relative self-center bg-slate-600 text-black font-black px-2 py-1 rounded pointer-events-none">REGISTER</a>
+		}
+	</div>	
+</section>
 <style>
 	section{
 		backdrop-filter: blur(10px);

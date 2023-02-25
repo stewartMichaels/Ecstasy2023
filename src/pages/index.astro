@@ -10,8 +10,7 @@ import Layout from "../layouts/Layout.astro";
 
     <main
       id="primary-content"
-      class="mx-auto w-full md:max-w-[1300px] relative z-19 flex flex-col mt-20 md:mt-0 md:pt-[9em] md:flex-row gap-1 md:gap-10 px-2 md:px-10"
-    >
+      class="mx-auto w-full md:max-w-[1300px] relative z-19 flex flex-col mt-20 md:mt-0 md:pt-[9em] md:flex-row gap-1 md:gap-10 px-2 md:px-10">
       <div id="left-col" class="w-full md:w-6/12">
         <section id="hero">
           <h1 class="h1custom font-bold  text-white text-6xl font-playfair pb-2">
@@ -59,9 +58,11 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </main>
     </div>
+
+  <!--QUOTE -->
   <div id="quote" class="mt-[10em] md:mt-[10em] z-20 min-h-[15em] flex flex-col md:flex-row mx-auto p-5 pt-10 md:pt-20 md:p-10 justify-center gap-10 md:gap-20 items-center bg-white">
     <section id="left-body" class="">
-      <img src="/assets/heroImg1.webp" alt="organizer's image" class="rounded-full md:rounded-lg w-[13em]">
+      <img src="/assets/heroImg1.webp" alt="organizer's image" class="rounded-full md:rounded-lg w-[13em] pointer-events-none">
     </section>
     <section id="right-body" class="w-full md:w-5/12">
       <p class="font-playfair italic font-light text-[1.2rem]">
@@ -69,11 +70,12 @@ import Layout from "../layouts/Layout.astro";
       </p>
     </section>
   </div>
+  <!--SPONSORS -->
   <div id="secondary-content" class="md:pt-[3em] z-20 bg-white">
       <section id="sponsor-container" class="">
         <!-- <Carousel/> -->
         <h1 class="text-center font-playfair text-4xl font-light">Our Sponsors</h1>
-        <div id="sponsor-logo" class="flex justify-center items-center gap-10 lg:gap-20 pt-10 flex-wrap">
+        <div id="sponsor-logo" class="flex justify-center items-center gap-10 lg:gap-20 pt-10 flex-wrap pointer-events-none">
           <img src="/assets/sponsors/sponsor1.png" alt="SBI" class="w-[9rem]">
           <img src="/assets/sponsors/sponsor2.png" alt="KTM" class="w-[9rem]">
           <img src="/assets/sponsors/sponsor3.png" alt="JAJABOR" class="w-[9rem]">
