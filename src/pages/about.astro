@@ -8,24 +8,23 @@ import NonHomeLayout from "../layouts/NonHomeLayout.astro";
     id="wrapper"
     class="w-full mx-auto md:max-w-[1300px] mt-16 md:mt-[5em] px-2 md:px-10"
   >
-    <main>
+    <main id="outer-container">
+      <section id="inner-container" class="bg-white rounded-lg shadow-black shadow-lg">
       <!-- Director's Message -->
       <div
-        class="bg-white py-16 rounded-t-lg select-none pointer-events-none" 
-      >
+        class="bg-white rounded-t-md py-16 select-none pointer-events-none">
           <h2
-            class="text-gray-800 mb-4 pb-10 font-playfair text-4xl font-light text-center"
-          >
-            Word from our Director
+            class="text-gray-800 mb-4 pb-10 font-playfair text-4xl font-light text-center">
+            Words from our Director.
           </h2>
           <div class="container mx-auto">
-            <div class="flex flex-col items-center lg:flex-row gap-5 lg:gap-20 px-5 lg:px-20">
+            <div class="flex flex-col items-center lg:flex-row gap-10 lg:gap-20 px-5 lg:px-20">
                 <img
                   src="/assets/board/director-image.jpeg"
-                  alt="Director Image"
+                  alt="Director's Image"
                   class="w-[13em] rounded-full"
                 />
-              <div class="w-full flex-grow mt-8 md:mt-0">
+              <div class="w-full flex-grow">
                 <blockquote
                   class="text-gray-600 italic border-l-4 pl-7 border-gray-300"
                 >
@@ -53,12 +52,12 @@ import NonHomeLayout from "../layouts/NonHomeLayout.astro";
       </div>
 
       <!-- Event Overview section -->
-      <section class="bg-gray-100 py-16 select-none pointer-events-none">
+      <section class="bg-gray-100 py-16 select-none pointer-events-none rounded-lg">
         <div class="container mx-auto px-5 md:px-10 lg:px-20">
           <h2
             class="text-gray-800 mb-4 text-center pb-10 font-playfair text-4xl font-light"
           >
-            Event Overview
+            Event Overview.
           </h2>
           <p class="text-gray-600 leading-relaxed text-[1rem] font-sans">
             Welcome to Ecstasy 2023, the most anticipated cultural festival of
@@ -86,7 +85,7 @@ import NonHomeLayout from "../layouts/NonHomeLayout.astro";
           <h2
             class="text-gray-800 mb-4 text-center pb-10 font-playfair text-4xl font-light"
           >
-            Mission Statement
+            Mission Statement.
           </h2>
           <p class="text-gray-600 leading-relaxed font-sans text-[1rem]">
             Our mission at Ecstasy 2023 is to celebrate the rich and diverse
@@ -103,12 +102,12 @@ import NonHomeLayout from "../layouts/NonHomeLayout.astro";
       </section>
 
       <!-- Organizing Committee section -->
-      <section class="bg-gray-100 py-16 select-none pointer-events-none">
+      <section class="bg-gray-100 py-16 select-none pointer-events-none rounded-lg">
         <div class="container mx-auto px-4">
           <h2
             class="text-gray-800 mb-4 text-center pb-10 font-playfair text-4xl font-light"
           >
-            Management Committee
+            Management Committee.
           </h2>
           <div class="flex flex-col sm:flex-row sm:flex-wrap gap-10 justify-around">
             <div class=" flex flex-col items-center">
@@ -146,21 +145,23 @@ import NonHomeLayout from "../layouts/NonHomeLayout.astro";
           </div>
         </div>
       </section>
-
+    </section>
       <!-- Map to College -->
-      <section class="bg-white py-10 rounded-b-lg">
-        <div class="container mx-auto px-4">
-          <h2
-            class="text-gray-800 mb-4 text-center pb-10 font-playfair text-4xl font-light"
-          >
-            Join Us At
-          </h2>
-          <div class="w-full h-96 rounded-lg border-2">
+      <section class=" pt-20 rounded-b-lg">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row md:justify-center gap-10">
+          <div id="map-left-container" class="flex flex-col justify-center">
+            <h2
+              class="text-slate-100 text-center pb-5 font-serif text-4xl font-light">
+              Visit Us At
+            </h2>
+            <p class="text-white text-2xl font-serif text-center">Central Institute of Technology, Kokrajhar, Balagaon Pt-I, Assam</p>
+          </div>
+          <div class="w-full md:w-7/12 h-[400px] rounded-lg border-2 self-center">
             <iframe
               class="w-full h-full rounded-lg"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.3070762469947!2d90.30044981545717!3d26.478055985039564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3758f4d277d13e8d%3A0x233749495bfdb465!2sCentral%20Institute%20of%20Technology%2C%20Kokrajhar!5e0!3m2!1sen!2sin!4v1677676861572!5m2!1sen!2sin"
-              width="600"
-              height="450"
+              width="500"
+              height="500"
               style="border:0;"
               allowfullscreen=""
               loading="lazy"
