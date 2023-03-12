@@ -1,17 +1,17 @@
 ---
-import NonHomeLayout from "../layouts/NonHomeLayout.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<NonHomeLayout>
+<Layout>
   <div id="background-img" class="-z-30"></div>
   <div
     id="wrapper"
     class="w-full mx-auto md:max-w-[1300px] mt-16 md:mt-[5em] px-2 md:px-10"
   >
-    <h1 class="text-5xl font-playfair text-center text-white pb-2">
+    <h1 class="text-5xl font-playfair text-center text-black pb-2 pt-20">
       Contact Us!
     </h1>
-	<p class="text-2xl font-serif text-center text-slate-300 pb-9">If you have any queries, feel free to write to us.</p>
+	<p class="text-2xl font-serif text-center text-black pb-10">If you have any queries, feel free to write to us.</p>
 
     <main>
       <div class="rounded-lg max-w-7xl mx-auto sm:px-6 lg:px-8 py-6 flex justify-center">
@@ -21,7 +21,7 @@ import NonHomeLayout from "../layouts/NonHomeLayout.astro";
           method="POST"
           class="border  w-full md:w-9/12 px-5 pb-10 rounded-lg flex flex-col shadow-lg shadow-black"
         >
-          <h1 class="text-4xl font-playfair text-center py-10 font-bold text-white">Leave us a Message!👋</h1>
+          <h1 class="text-4xl font-playfair text-center py-10 font-bold text-black">Leave us a Message!</h1>
           <div class="mb-4">
             <label for="name" class="sr-only">Name</label>
             <input
@@ -75,7 +75,7 @@ import NonHomeLayout from "../layouts/NonHomeLayout.astro";
       </div>
     </main>
   </div>
-</NonHomeLayout>
+</Layout>
 
 <!-- Error Message Script -->
 <script>
@@ -107,7 +107,6 @@ import NonHomeLayout from "../layouts/NonHomeLayout.astro";
     /* background-image: url("/assets/space3.jpg"); */
     /* background-color: #2d3563; */
     /* background-color: #1d2241; */
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1004%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%231e3266'%3e%3c/rect%3e%3cpath d='M1560 560L0 560 L0 303.5Q62.51 246.01%2c 120 308.53Q193.02 261.55%2c 240 334.57Q292.45 267.02%2c 360 319.47Q420.76 308.24%2c 432 369Q437.18 302.18%2c 504 307.36Q558.39 241.75%2c 624 296.15Q701.9 254.05%2c 744 331.96Q770.26 286.22%2c 816 312.48Q902.99 279.47%2c 936 366.46Q960.31 318.77%2c 1008 343.08Q1033.2 296.28%2c 1080 321.48Q1119.81 241.29%2c 1200 281.1Q1291.47 252.57%2c 1320 344.04Q1371.6 275.63%2c 1440 327.23Q1477.36 244.59%2c 1560 281.94z' fill='%23182f5d'%3e%3c/path%3e%3cpath d='M1464 560L0 560 L0 382.63Q86.85 349.48%2c 120 436.32Q137.61 381.93%2c 192 399.54Q211.23 346.77%2c 264 366Q311.09 341.09%2c 336 388.18Q379.69 359.87%2c 408 403.56Q454.88 378.44%2c 480 425.32Q510.68 336%2c 600 366.68Q641.06 335.74%2c 672 376.8Q717.94 350.74%2c 744 396.68Q820.78 353.46%2c 864 430.24Q907.25 401.49%2c 936 444.74Q936.84 373.58%2c 1008 374.42Q1033.79 328.21%2c 1080 353.99Q1179.76 333.75%2c 1200 433.51Q1229.6 391.11%2c 1272 420.71Q1289.8 366.5%2c 1344 384.3Q1395.85 316.15%2c 1464 368z' fill='%2325467d'%3e%3c/path%3e%3cpath d='M1512 560L0 560 L0 456.07Q41.19 425.26%2c 72 466.46Q139.86 414.32%2c 192 482.18Q233.33 451.51%2c 264 492.84Q275.91 432.75%2c 336 444.66Q385.64 374.3%2c 456 423.94Q512 407.94%2c 528 463.95Q576.88 440.84%2c 600 489.72Q640.58 410.3%2c 720 450.87Q744.24 403.11%2c 792 427.35Q845.42 408.77%2c 864 462.2Q912.59 390.78%2c 984 439.37Q1038.69 422.06%2c 1056 476.76Q1108.03 456.78%2c 1128 508.81Q1128.77 437.57%2c 1200 438.34Q1229.37 395.7%2c 1272 425.07Q1346.44 379.51%2c 1392 453.95Q1481.98 423.93%2c 1512 513.91z' fill='%23356cb1'%3e%3c/path%3e%3cpath d='M1512 560L0 560 L0 534.65Q67.04 481.69%2c 120 548.73Q139.2 495.93%2c 192 515.13Q216.96 468.09%2c 264 493.05Q305.35 462.4%2c 336 503.76Q406.83 454.59%2c 456 525.41Q516.05 513.46%2c 528 573.52Q569.03 494.55%2c 648 535.57Q677.8 493.37%2c 720 523.17Q807.18 490.35%2c 840 577.52Q890.25 507.77%2c 960 558.02Q997.44 475.46%2c 1080 512.9Q1126.19 487.09%2c 1152 533.28Q1206.84 468.12%2c 1272 522.96Q1324.58 455.54%2c 1392 508.11Q1477.93 474.04%2c 1512 559.97z' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1004'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
