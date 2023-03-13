@@ -6,74 +6,117 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
   <div id="background-vid" class=" h-[20vh] w-[100vw] bg-cover md:bg-cover relative top-[-5.7em]">
     </div>
-  <div id="wrapper" class="relative pb-[5em] md:pb-[10em]">
+  <div id="wrapper" class="relative md:pt-[5em] pb-[5em] md:pb-[10em]">
     <div id="background-img" class="-z-30"></div>
     <main
       id="primary-content"
-      class="mx-auto w-full md:max-w-[1300px] relative z-19 flex flex-col mt-20 md:mt-0 md:flex-row gap-1 md:gap-10 px-2 md:px-10"
-    >
-      <div id="left-col" class="w-full md:w-6/12">
-        <section id="hero">
-          <h1 class="font-light  text-black text-5xl font-playfair pb-2">
-            Come Get Lost in the Madness!
+      class="mx-auto w-full md:max-w-[1300px] relative z-19 mt-30 md:mt-0 px-2 md:px-10 justify-center">
+      <div id="left-col" class="w-full flex flex-col justify-center">
+        <section id="hero" class="self-center">
+          <h1 class="font-light  text-black text-center text-5xl font-poppins pb-2">
+            COME GET LOST IN THE MADNESS!
           </h1>
-          <span
-            class="text-black uppercase font-black text-6xl lg:text-7xl pb-2 font-serif"
+          <h1
+            class="text-black uppercase text-center font-black text-6xl lg:text-7xl pb-2 font-sans"
             >ECSTASY23
-          </span>
-          <p class="text-3xl uppercase pt-2 text-black font-serif mb-4">
+          </h1>
+          <p class="text-3xl uppercase pt-2 text-center text-black font-serif mb-4">
             Cultural Festival
           </p>
         </section>
         <p
-          class=" border-t-2 border-b-2  border-black px-6 py-3 font-poppins font-medium w-full lg:w-[90%] text-center text-black text-[0.9rem] md:text-[1.1rem]">
+          class="w-full border-t-2 border-b-2  border-black px-6 py-3 font-poppins font-medium lg:w-[50%] border-l-4 border-r-4 text-center text-black text-[0.9rem] md:text-[1.1rem] self-center">
           Get ready for <strong>Ecstasy 2023</strong> - a cultural fest with trending
           activities, amazing performances and a vibe that rocks! Don't miss out
           on the good times.
         </p>
       </div>
-      <div
-        id="right-col"
-        class="grow flex flex-col justify-center lg:grid lg:grid-cols-2 gap-[0.5em] md:gap-[1em] pt-10 md:pt-0"
-      >
-        <div class="link-card card1 items-end font-poppins text-[0.9rem]">
-          <a href="./events">
-            <h2>
-              <strong>CULTURAL EVENTS</strong>
-              <span>&rarr;</span>
-            </h2>
-            <p>Participate in Variety of Events!</p>
-          </a>
-        </div>
-        <div
-          class="link-card card2 h-auto items-end font-poppins text-[0.9rem]"
-        >
-          <a href="./contests">
-            <h2>
-              <strong>CONTESTS</strong>
-              <span>&rarr;</span>
-            </h2>
-            <p>Participate in Variety of Events!</p>
-          </a>
-        </div>
-        <div
-          class="link-card card3 h-auto items-end overflow-hidden font-poppins text-[0.9rem]"
-        >
-          <a href="./sports" class="">
-            <h2>
-              <strong>SPORTS EVENTS</strong>
-              <span>&rarr;</span>
-            </h2>
-            <p>Participate in Variety of Events!</p>
-          </a>
-        </div>
-      </div>
     </main>
   </div>
 
-  <section class="flex item-center justify-center">
-      <div id="margin" class="border-2 border-slate-200 w-[25%] md:w-[10%] rounded-full"></div>
+  <section class="flex item-center justify-center md:pb-20">
+      <div id="margin" class="border-2 border-slate-100 w-[25%] md:w-[50%] rounded-full"></div>
   </section>
+
+
+<!--EVENT CARD SECTION -->
+  <div id="block-continer" class="px-2 md:px-5 h-[50vh] mx-auto flex justify-center gap-[10em]">
+      <section class="self-center hidden lg:flex lg:flex-col">
+      <h1 class="font-playfair text-black font-light text-7xl pb-3 self-center">
+        EXPLORE!!
+      </h1>
+      <p class="text-3xl font-light font-poppins self-center">PARTICIPATE IN VARIOUS</p>
+      <p class="text-2xl font-light font-poppins pb-5 self-center">CONTESTS AND EVENTS.</p>
+      <a href="./about" class=" bg-red-200 px-16 py-2 font-black font-playfair rounded-full text-2xl self-center">INFO.</a>
+      </section>
+      <section
+          id="right-col"
+          class="flex grow lg:grow-0 flex-col justify-center lg:grid lg:grid-cols-2 gap-[0.5em] md:gap-[1em] pt-10 md:pt-0"
+        >
+          <div class="link-card card1 items-end font-poppins text-[0.9rem]">
+            <a href="./events">
+              <h2>
+                <strong>CULTURAL EVENTS</strong>
+                <span>&rarr;</span>
+              </h2>
+              <p>Participate in Variety of Events!</p>
+            </a>
+          </div>
+          <div
+            class="link-card card2 h-auto items-end font-poppins text-[0.9rem]"
+          >
+            <a href="./contests">
+              <h2>
+                <strong>CONTESTS</strong>
+                <span>&rarr;</span>
+              </h2>
+              <p>Participate in Variety of Events!</p>
+            </a>
+          </div>
+          <div
+            class="link-card card3 h-auto items-end overflow-hidden font-poppins text-[0.9rem]"
+          >
+            <a href="./sports" class="">
+              <h2>
+                <strong>SPORTS EVENTS</strong>
+                <span>&rarr;</span>
+              </h2>
+              <p>Participate in Variety of Events!</p>
+            </a>
+          </div>
+        </section>
+    </div>
+
+    <section class="flex item-center justify-center pt-20">
+      <div id="margin" class="border-2 border-slate-100 w-[25%] md:w-[50%] rounded-full"></div>
+  </section>
+
+<!--MERCH SECTION -->
+  <div id="merch-container" class="py-16">
+    <h1 class="text-center text-4xl pb-5 font-playfair font-light px-5">
+     GRAB YOURSELF A T-SHIRT!!
+    </h1>
+    <section id="merch-div" class="hidden sm:flex justify-center items-center">
+      <img src="/assets/merch/shirt1.jpg" alt="T-Shirt" class="h-[21em]">
+      <img src="/assets/merch/shirt2.jpg" alt="T-Shirt" class="h-[21em]">
+      <img src="/assets/merch/shirt3.jpg" alt="T-Shirt" class="h-[21em]">
+    </section>
+    <section class="sm:hidden">
+      <Carousel/>
+    </section>
+    <h1 class="text-center text-2xl font-poppins font-light pt-5">
+     CONTACT: 9954897236
+    </h1>
+    <h1 class="text-center text-xl font-poppins font-light">IGNATIUS BASUMATARY</h1>
+  </div>
+
+
+
+  <section class="flex item-center justify-center">
+      <div id="margin" class="border-2 border-slate-100 w-[25%] md:w-[50%] rounded-full"></div>
+  </section>
+
+
   <!--QUOTE -->
   <div
     id="quote"
@@ -113,8 +156,9 @@ import Layout from "../layouts/Layout.astro";
       </section>
   </div>
 
+
  <section id="margin" class="flex item-center justify-center">
-      <div class="border-2 border-slate-200 w-[25%] md:w-[10%] rounded-full"></div>
+      <div class="border-2 border-slate-100 w-[25%] md:w-[50%] rounded-full"></div>
   </section>
 
   <!-- Organizing Committee section -->
@@ -163,7 +207,7 @@ import Layout from "../layouts/Layout.astro";
       </section>
 
   <section class="flex item-center justify-center">
-      <div id="margin" class="border-2 border-slate-200 w-[25%] md:w-[10%] rounded-full"></div>
+      <div id="margin" class="border-2 border-slate-100 w-[25%] md:w-[50%] rounded-full"></div>
   </section>
 
   <!--SPONSORS -->
