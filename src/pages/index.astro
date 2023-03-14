@@ -95,7 +95,7 @@ import Layout from "../layouts/Layout.astro";
   </section>
 
 <!--MERCH SECTION -->
-  <div id="merch-container" class="py-5">
+  <div id="merch-container" class="py-5 bg-[#191919] text-white">
     <h1 class="text-center text-4xl pb-5 font-poppins font-black px-5">
      GRAB A MERCH!!
     </h1>
@@ -123,17 +123,17 @@ import Layout from "../layouts/Layout.astro";
   <!--QUOTE -->
   <div
     id="quote"
-    class="z-20 min-h-[15em]  mx-auto p-5 md:p-5  select-none pointer-events-none mb-[5em]">
+    class="z-20 min-h-[15em]  mx-auto p-5 md:p-10  select-none pointer-events-none mb-[5em]">
      <h2 class="text-gray-800 mb-4 text-center pt-10 pb-10 font-poppins text-4xl font-light" >MESSAGE FROM DIRECTOR</h2>
-    <section class="flex flex-col md:flex-row justify-center gap-10 md:gap-20 items-center">
+    <section class="flex flex-col md:flex-row justify-center gap-10 items-center">
         <section id="left-body" class="">
           <img
             src="/assets/board/director-image.jpeg"
             alt="organizer's image"
-            class="rounded-full md:rounded-full w-[12em] md:w-[14em] pointer-events-none border-2 border-white"
+            class="rounded-full md:rounded-full w-[10em] md:w-[13em] pointer-events-none border-2 border-white"
           />
         </section>
-        <section id="right-body" class="w-full md:w-6/12">
+        <section id="right-body" class="w-full lg:w-[50em]">
           <p class="font-playfair italic font-light text-[1.2rem]">
             <blockquote class="text-black text-[1rem] italic border-l-4 pl-4 border-gray-300">
                     <p class="mb-4">
@@ -168,12 +168,12 @@ import Layout from "../layouts/Layout.astro";
       <section class=" py-16 select-none pointer-events-none">
         <div class="container mx-auto px-4">
           <h2
-            class="text-gray-800 mb-4 text-center pb-20 font-poppins text-4xl font-light"
+            class="text-gray-800 mb-4 text-center pb-10 md:pb-20 font-poppins text-4xl font-black"
           >
           COMMITTEE MEMBERS
           </h2>
-          <div class="flex flex-wrap -mx-4 text-center">
-            <div class="w-full md:w-1/4 px-4 mb-8">
+          <div class="flex flex-wrap justify-center items-center gap-10 text-center">
+            <div class="">
               <img
                 src="/assets/organizing-committee/organizer1.jpeg"
                 alt="Organizer 1"
@@ -181,7 +181,7 @@ import Layout from "../layouts/Layout.astro";
               />
               <h3 class="text-lg font-medium text-gray-800">MEMBER 1</h3>
             </div>
-            <div class="w-full md:w-1/4 px-4 mb-8">
+            <div class="">
               <img
                 src="/assets/organizing-committee/organizer2.jpeg"
                 alt="Organizer 2"
@@ -189,7 +189,7 @@ import Layout from "../layouts/Layout.astro";
               />
               <h3 class="text-lg font-medium text-gray-800">MEMBER 2</h3>
             </div>
-            <div class="w-full md:w-1/4 px-4 mb-8">
+            <div class="">
               <img
                 src="/assets/organizing-committee/organizer3.jpeg"
                 alt="Organizer 3"
@@ -197,7 +197,7 @@ import Layout from "../layouts/Layout.astro";
               />
               <h3 class="text-lg font-medium text-gray-800">MEMBER 3</h3>
             </div>
-            <div class="w-full md:w-1/4 px-4 mb-8">
+            <div class="">
               <img
                 src="/assets/organizing-committee/organizer4.jpeg"
                 alt="Organizer 4"
@@ -216,19 +216,18 @@ import Layout from "../layouts/Layout.astro";
   <!--SPONSORS -->
   <div id="secondary-content" class=" py-16 z-20 bg-white">
     <section id="sponsor-container" class="">
-      <!-- <Carousel/> -->
-      <h1 class="text-center font-poppins text-4xl font-black pb-10 sm:pb-20">
+      <h1 class="text-center font-poppins text-4xl font-black pb-10 md:pb-20">
       SPONSORS
       </h1>
       <div
         id="sponsor-logo"
-        class="flex flex-wrap items-center justify-center gap-10 lg:gap-20 pointer-events-none"
+        class="flex flex-wrap items-center justify-center gap-10 lg:gap-20 pointer-events-none px-2"
       >
-        <img src="/assets/sponsors/sponsor1.png" alt="SBI" class="w-[9rem]"/>
-        <img src="/assets/sponsors/sponsor2.png" alt="KTM" class="w-[9rem]"/>
-        <img src="/assets/sponsors/sponsor3.png" alt="JAJABOR" class="w-[9rem]"/>
-        <img src="/assets/sponsors/sponsor4.png" alt="Royal Enfield" class="w-[9rem]"/>
-        <img src="/assets/sponsors/swaglok.png" alt="Swaglok Merchandise Partner" class="w-[9rem]"/>
+        <img src="/assets/sponsors/sponsor1.png" alt="SBI" class="h-32 w-32"/>
+        <img src="/assets/sponsors/sponsor2.png" alt="KTM" class="h-32 w-32"/>
+        <img src="/assets/sponsors/sponsor3.png" alt="JAJABOR" class="h-32 w-32"/>
+        <img src="/assets/sponsors/sponsor4.png" alt="Royal Enfield" class="h-32 w-32"/>
+        <img src="/assets/sponsors/swaglok.png" alt="Swaglok Merchandise Partner" class="h-32 w-32"/>
       </div>
     </section>
   </div>
@@ -325,25 +324,5 @@ import Layout from "../layouts/Layout.astro";
   .link-card:is(:hover, :focus-within) h2 {
     color: #3b82f6;
   }
-
-  /* #background-img {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 100%;
-    background-image: url("/assets/image (4).jpg");
-    background-color: #fff5fd;
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-x: 760px;
-     filter: grayscale(30%); 
-  } */
-  /* #background-vid{
-    background-image: url("/assets/image (1).jpg");
-    background-size: cover;
-     background-repeat: no-repeat;
-    background-position: right;
-  } */
 </style>
+
