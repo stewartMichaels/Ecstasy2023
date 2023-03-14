@@ -34,12 +34,15 @@ import Layout from "../layouts/Layout.astro";
     </main>
   </div>
 
-  <section class="flex item-center justify-center md:pb-20">
+  <section class="flex item-center justify-center pb-10">
       <div id="margin" class="border-2 border-slate-100 w-[100%] md:w-[100%] rounded-full"></div>
   </section>
 
 
 <!--EVENT CARD SECTION -->
+  <h1 class="font-playfair text-center lg:hidden text-black font-light text-7xl pb-5">
+        EXPLORE!!
+  </h1>
   <div id="block-continer" class="px-2 md:px-5 h-[50vh] mx-auto flex justify-center gap-[10em]">
       <section class="self-center hidden lg:flex lg:flex-col">
       <h1 class="font-playfair text-black font-light text-7xl pb-3 self-center">
@@ -51,7 +54,7 @@ import Layout from "../layouts/Layout.astro";
       </section>
       <section
           id="right-col"
-          class="flex grow lg:grow-0 flex-col justify-center lg:grid lg:grid-cols-2 gap-[0.5em] md:gap-[1em] pt-10 md:pt-0"
+          class="flex grow lg:grow-0 flex-col justify-center lg:grid lg:grid-cols-2 gap-[0.5em] md:gap-[1em]"
         >
           <div class="link-card card1 items-end font-poppins text-[0.9rem]">
             <a href="./events">
@@ -87,27 +90,27 @@ import Layout from "../layouts/Layout.astro";
         </section>
     </div>
 
-    <section class="flex item-center justify-center pt-10 md:pt-20">
+    <section class="flex item-center justify-center pt-10">
       <div id="margin" class="border-2 border-slate-100 w-[100%] md:w-[100%] rounded-full"></div>
   </section>
 
 <!--MERCH SECTION -->
-  <div id="merch-container" class="py-16">
-    <h1 class="text-center text-4xl pb-5 font-poppins font-light px-5">
-     GRAB YOURSELF A T-SHIRT!!
+  <div id="merch-container" class="py-5">
+    <h1 class="text-center text-4xl pb-5 font-poppins font-black px-5">
+     GRAB A MERCH!!
     </h1>
-    <section id="merch-div" class="hidden sm:flex justify-center items-center">
-      <img src="/assets/merch/shirt1.jpg" alt="T-Shirt" class="h-[21em]">
-      <img src="/assets/merch/shirt2.jpg" alt="T-Shirt" class="h-[21em]">
-      <img src="/assets/merch/shirt3.jpg" alt="T-Shirt" class="h-[21em]">
+    <section id="merch-div" class="hidden sm:flex flex-wrap justify-center items-center gap-2">
+      <img src="/assets/merch/shirt1.jpg" alt="T-Shirt" class="h-[15em] rounded-md">
+      <img src="/assets/merch/shirt2.jpg" alt="T-Shirt" class="h-[15em] rounded-md">
+      <img src="/assets/merch/shirt3.jpg" alt="T-Shirt" class="h-[15em] rounded-md">
     </section>
     <section class="sm:hidden">
       <Carousel/>
     </section>
-    <h1 class="text-center text-2xl font-poppins font-light pt-5">
+    <h1 class="text-center text-l font-poppins font-bold pt-5">
      CONTACT: 9954897236
     </h1>
-    <h1 class="text-center text-xl font-poppins font-light">IGNATIUS BASUMATARY</h1>
+    <h1 class="text-center text-sm font-poppins font-bold">IGNATIUS BASUMATARY</h1>
   </div>
 
 
@@ -214,12 +217,12 @@ import Layout from "../layouts/Layout.astro";
   <div id="secondary-content" class=" py-16 z-20 bg-white">
     <section id="sponsor-container" class="">
       <!-- <Carousel/> -->
-      <h1 class="text-center font-poppins text-4xl font-light pb-20">
+      <h1 class="text-center font-poppins text-4xl font-black pb-10 sm:pb-20">
       SPONSORS
       </h1>
       <div
         id="sponsor-logo"
-        class="flex justify-center items-center gap-10 lg:gap-20 flex-wrap pointer-events-none"
+        class="flex flex-wrap items-center justify-center gap-10 lg:gap-20 pointer-events-none"
       >
         <img src="/assets/sponsors/sponsor1.png" alt="SBI" class="w-[9rem]"/>
         <img src="/assets/sponsors/sponsor2.png" alt="KTM" class="w-[9rem]"/>
@@ -344,4 +347,3 @@ import Layout from "../layouts/Layout.astro";
     background-position: right;
   } */
 </style>
-
