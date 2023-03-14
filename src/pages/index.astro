@@ -4,8 +4,9 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <div id="background-vid" class=" h-[20vh] w-[100vw] bg-cover md:bg-cover relative top-[-5.7em]">
-    </div>
+<div id="background-vid" class=" h-[20vh] w-[100vw] bg-cover md:bg-cover relative top-[-5.7em]">
+</div>
+<!--HERO SECTION -->
   <div id="wrapper" class="relative md:pt-[5em] pb-[2em] md:pb-[10em]">
     <div id="background-img" class="-z-30"></div>
     <main
@@ -25,7 +26,7 @@ import Layout from "../layouts/Layout.astro";
           </p>
         </section>
         <p
-          class="w-full border-t-2 border-b-2  border-black px-6 py-3 font-poppins font-medium lg:w-[50%] border-l-4 border-r-4 text-center text-black text-[0.9rem] md:text-[1.1rem] self-center">
+          class="w-full border-t-2 border-b-2  border-black px-6 py-3 font-poppins font-medium lg:w-[50%] border-l-4 border-r-4 text-center text-black text-[0.9rem] md:text-[1.1rem] self-center rounded-xl">
           Get ready for <strong>Ecstasy 2023</strong> - a cultural fest with trending
           activities, amazing performances and a vibe that rocks! Don't miss out
           on the good times.
@@ -33,17 +34,20 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </main>
   </div>
+<!--END-->
 
-  <section class="flex item-center justify-center pb-10">
-      <div id="margin" class="border-2 border-slate-100 w-[100%] md:w-[100%] rounded-full"></div>
-  </section>
-
+    <!-- <section class="flex item-center justify-center">
+        <div id="margin" class="border-2 border-slate-100 w-[100%] md:w-[100%] rounded-full"></div>
+    </section> -->
 
 <!--EVENT CARD SECTION -->
-  <h1 class="font-playfair text-center lg:hidden text-black font-light text-7xl pb-5">
+<div id="explore-container" class="lg:py-10 relative overflow-clip">
+    <img src="/assets/image (4).jpg" alt="flower" class="h-[30.5em] absolute -right-[15em] -top-2 -z-30">
+    <img src="/assets/image (4).jpg" alt="flower" class="h-[30.5em] absolute -z-30 -left-[15em] -top-2">
+  <h1 class="font-playfair text-center lg:hidden text-black font-light text-7xl pt-5 z-20">
         EXPLORE!!
   </h1>
-  <div id="block-continer" class="px-2 md:px-5 h-[50vh] mx-auto flex justify-center gap-[10em]">
+  <div id="block-continer" class="px-2 md:px-5 h-[50vh] mx-auto flex justify-center gap-[5em]">
       <section class="self-center hidden lg:flex lg:flex-col">
       <h1 class="font-playfair text-black font-light text-7xl pb-3 self-center">
         EXPLORE!!
@@ -54,7 +58,7 @@ import Layout from "../layouts/Layout.astro";
       </section>
       <section
           id="right-col"
-          class="flex grow lg:grow-0 flex-col justify-center lg:grid lg:grid-cols-2 gap-[0.5em] md:gap-[1em]"
+          class="flex grow lg:grow-0 flex-col justify-center lg:grid lg:grid-cols-2 gap-[0.3em] lg:gap-[1em]"
         >
           <div class="link-card card1 items-end font-poppins text-[0.9rem]">
             <a href="./events">
@@ -89,10 +93,11 @@ import Layout from "../layouts/Layout.astro";
           </div>
         </section>
     </div>
-
-    <section class="flex item-center justify-center pt-10">
-      <div id="margin" class="border-2 border-slate-100 w-[100%] md:w-[100%] rounded-full"></div>
-  </section>
+  </div>
+<!--END -->
+    <!-- <section class="flex item-center justify-center">
+        <div id="margin" class="border-2 border-slate-100 w-[100%] md:w-[100%] rounded-full"></div>
+    </section> -->
 
 <!--MERCH SECTION -->
   <div id="merch-container" class="py-5 bg-[#191919] text-white">
@@ -112,15 +117,14 @@ import Layout from "../layouts/Layout.astro";
     </h1>
     <h1 class="text-center text-sm font-poppins font-bold text-slate-500">IGNATIUS BASUMATARY</h1>
   </div>
-
-
+<!--END -->
 
   <section class="flex item-center justify-center">
       <div id="margin" class="border-2 border-slate-100 w-[100%] md:w-[100%] rounded-full"></div>
   </section>
 
 
-  <!--QUOTE -->
+<!--QUOTE -->
   <div
     id="quote"
     class="z-20 min-h-[15em]  mx-auto p-5 md:p-10  select-none pointer-events-none mb-[5em]">
@@ -158,62 +162,61 @@ import Layout from "../layouts/Layout.astro";
         </section>
       </section>
   </div>
-
+<!--END -->
 
  <section id="margin" class="flex item-center justify-center">
       <div class="border-2 border-slate-100 w-[100%] md:w-[100%] rounded-full"></div>
   </section>
 
-  <!-- Organizing Committee section -->
-      <section class=" py-16 select-none pointer-events-none">
-        <div class="container mx-auto px-4">
-          <h2
-            class="text-gray-800 mb-4 text-center pb-10 md:pb-20 font-poppins text-4xl font-black"
-          >
+<!--COMMITTEE SECTION-->
+  <section class=" py-16 select-none pointer-events-none">
+      <div class="container mx-auto px-4">
+          <h2 class="text-gray-800 mb-4 text-center pb-10 md:pb-20 font-poppins text-4xl font-black">
           COMMITTEE MEMBERS
           </h2>
           <div class="flex flex-wrap justify-center items-center gap-10 text-center">
-            <div class="">
-              <img
-                src="/assets/organizing-committee/organizer1.jpeg"
-                alt="Organizer 1"
-                class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
-              />
-              <h3 class="text-lg font-medium text-gray-800">MEMBER 1</h3>
+              <div class="">
+                <img
+                  src="/assets/organizing-committee/organizer1.jpeg"
+                  alt="Organizer 1"
+                  class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
+                />
+                <h3 class="text-lg font-medium text-gray-800">MEMBER 1</h3>
+              </div>
+              <div class="">
+                <img
+                  src="/assets/organizing-committee/organizer2.jpeg"
+                  alt="Organizer 2"
+                  class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
+                />
+                <h3 class="text-lg font-medium text-gray-800">MEMBER 2</h3>
+              </div>
+              <div class="">
+                <img
+                  src="/assets/organizing-committee/organizer3.jpeg"
+                  alt="Organizer 3"
+                  class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
+                />
+                <h3 class="text-lg font-medium text-gray-800">MEMBER 3</h3>
+              </div>
+              <div class="">
+                <img
+                  src="/assets/organizing-committee/organizer4.jpeg"
+                  alt="Organizer 4"
+                  class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
+                />
+                <h3 class="text-lg font-medium text-gray-800">MEMBER 4</h3>
+              </div>
             </div>
-            <div class="">
-              <img
-                src="/assets/organizing-committee/organizer2.jpeg"
-                alt="Organizer 2"
-                class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
-              />
-              <h3 class="text-lg font-medium text-gray-800">MEMBER 2</h3>
-            </div>
-            <div class="">
-              <img
-                src="/assets/organizing-committee/organizer3.jpeg"
-                alt="Organizer 3"
-                class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
-              />
-              <h3 class="text-lg font-medium text-gray-800">MEMBER 3</h3>
-            </div>
-            <div class="">
-              <img
-                src="/assets/organizing-committee/organizer4.jpeg"
-                alt="Organizer 4"
-                class="rounded-full w-32 h-32 object-cover mx-auto mb-4"
-              />
-              <h3 class="text-lg font-medium text-gray-800">MEMBER 4</h3>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
+  </section>
+<!--END -->
 
   <section class="flex item-center justify-center">
       <div id="margin" class="border-2 border-slate-100 w-[100%] md:w-[100%] rounded-full"></div>
   </section>
 
-  <!--SPONSORS -->
+<!--SPONSORS -->
   <div id="secondary-content" class=" py-16 z-20 bg-white">
     <section id="sponsor-container" class="">
       <h1 class="text-center font-poppins text-4xl font-black pb-10 md:pb-20">
@@ -231,6 +234,8 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </section>
   </div>
+<!--END -->
+
 </Layout>
 
 <style>
@@ -324,5 +329,15 @@ import Layout from "../layouts/Layout.astro";
   .link-card:is(:hover, :focus-within) h2 {
     color: #3b82f6;
   }
-</style>
 
+  #explore-container {
+    background-color: #fff5fd;
+    filter: grayscale(0%); 
+  }
+  /* #background-vid{
+    background-image: url("/assets/image (1).jpg");
+    background-size: cover;
+     background-repeat: no-repeat;
+    background-position: right;
+  } */
+</style>
