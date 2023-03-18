@@ -7,32 +7,28 @@ import Members from "../components/Members.astro";
 <Layout>
   <div
     id="background-vid"
-    class="h-[20vh] w-[100vw] bg-cover md:bg-cover relative top-[-5.7em]"
+    class="h-[100vh] w-[100vw] absolute -z-10 top-0 bg-white"
   >
+    <!-- <img src="" alt="ecstasy hero section" class="h-auto w-full"> -->
   </div>
   <!--HERO SECTION -->
-  <div id="wrapper" class="relative md:pt-[5em] pb-[2em] md:pb-[10em]">
+  <div id="wrapper" class="relative pt-20 md:py-[12em] pb-[3em] ">
     <div id="background-img" class="-z-30"></div>
     <main
       id="primary-content"
-      class="mx-auto w-full md:max-w-[1300px] relative z-19 mt-30 md:mt-0 px-2 md:px-10 justify-center"
+      class="mx-auto w-full md:max-w-[1300px] relative z-19 mt-30 md:mt-0 px-2 md:px-10"
     >
       <div id="left-col" class="w-full flex flex-col justify-center">
         <section id="hero" class="self-center">
           <h1
-            class="font-light text-black text-center text-5xl font-playfair pb-2"
-          >
-            COME GET LOST IN THE MADNESS!
-          </h1>
-          <h1
-            class="text-black uppercase text-center font-black text-6xl lg:text-7xl pb-2 font-sans"
+            class="text-black uppercase text-center font-black text-6xl lg:text-9xl pb-2 font-sans"
           >
             ECSTASY23
           </h1>
           <p
             class="text-3xl uppercase pt-2 text-center text-black font-serif mb-4"
           >
-            Cultural Festival
+            COME GET LOST IN THE MADNESS!
           </p>
         </section>
         <p
@@ -113,7 +109,7 @@ import Members from "../components/Members.astro";
               <strong>CONTESTS</strong>
               <span>&rarr;</span>
             </h2>
-            <p>Participate in Various Contests!</p>
+            <p>Explore Various Contests!</p>
           </a>
         </div>
         <div
@@ -375,12 +371,12 @@ import Members from "../components/Members.astro";
     background-color: #fff5fd;
     filter: grayscale(0%);
   }
-  /* #background-vid{
-    background-image: url("/assets/image (1).jpg");
-    background-size: cover;
-     background-repeat: no-repeat;
-    background-position: right;
-  } */
+  #background-vid img{
+    position: relative;
+    top: 0;
+    /* margin-left: 50%;
+    transform: translate(-50%,-50%); */
+  }
   #flower {
     /*NOT SUPPORTED BY FIREFOX */
     -webkit-box-reflect: below;
