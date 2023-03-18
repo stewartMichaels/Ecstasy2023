@@ -5,9 +5,10 @@ export interface Props {
   date: string;
   venue: string;
   regLink?: string;
+  time?: string;
 }
 
-const { eventNo, title, date, venue, regLink = null } = Astro.props;
+const { eventNo, title, date, venue, regLink = null, time } = Astro.props;
 ---
 
 <section
@@ -24,6 +25,10 @@ const { eventNo, title, date, venue, regLink = null } = Astro.props;
     <p id="venue" title={venue} class="truncate">
       <span class="text-slate-400">Venue:</span>
       {venue}
+    </p>
+    <p id="venue" title={time} class="truncate">
+      <span class="text-slate-400">Time:</span>
+      {time}
     </p>
   </div>
   <div id="bottom" class="self-center py-3">
