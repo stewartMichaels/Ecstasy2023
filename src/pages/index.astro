@@ -12,7 +12,7 @@ import Members from "../components/Members.astro";
     <!-- <img src="" alt="ecstasy hero section" class="h-auto w-full"> -->
   </div>
   <!--HERO SECTION -->
-  <div id="wrapper" class="relative pt-20 md:py-[12em] pb-[3em] ">
+  <div id="wrapper" class="relative pt-20 md:py-[12em] pb-[3em]">
     <div id="background-img" class="-z-30"></div>
     <main
       id="primary-content"
@@ -48,7 +48,10 @@ import Members from "../components/Members.astro";
     </section> -->
 
   <!--EVENT CARD SECTION -->
-  <div id="explore-container" class="lg:py-10 relative overflow-clip border-black border-t-4 border-b-4">
+  <div
+    id="explore-container"
+    class="lg:py-10 relative overflow-clip border-black border-t-4 border-b-4"
+  >
     <img
       id="flower"
       src="/assets/image1.webp"
@@ -92,7 +95,9 @@ import Members from "../components/Members.astro";
         id="right-col"
         class="flex grow lg:grow-0 flex-col justify-center lg:grid lg:grid-cols-2 gap-[0.3em] lg:gap-1 lg:border-black lg:border-4 p-1 rounded-md"
       >
-        <div class="link-card card1 items-end font-poppins text-[0.9rem] rounded-md ">
+        <div
+          class="link-card card1 items-end font-poppins text-[0.9rem] rounded-md"
+        >
           <a href="./events">
             <h2>
               <strong>CULTURAL EVENTS</strong>
@@ -230,9 +235,9 @@ import Members from "../components/Members.astro";
   </section>
 
   <!--COMMITTEE SECTION-->
-    <section class="py-16 select-none pointer-events-none">
-      <Members />
-    </section>
+  <section class="py-16">
+    <Members />
+  </section>
   <!--END -->
 
   <section class="flex item-center justify-center">
@@ -251,24 +256,25 @@ import Members from "../components/Members.astro";
       </h1>
       <div
         id="sponsor-logo"
-        class="flex flex-wrap items-center justify-center gap-10 lg:gap-20 pointer-events-none px-2">
-          <img
-            src="/assets/sponsors/king-biryani-edited.webp"
-            alt="King Biryani"
-            class="h-32 w-32"
-          />
-          <img src="/assets/sponsors/samadhan.webp" alt="SOFTWARE SAMADHAN" class="h-32 w-32" />
-          <img src="/assets/sponsors/sponsor2.webp" alt="KTM" class="h-32 w-32" />
-          <img
-            src="/assets/sponsors/ubore.png"
-            alt="URBORE"
-            class="h-32 w-32"
-          />
-          <img
-            src="/assets/sponsors/swaglok.webp"
-            alt="Swaglok Merchandise Partner"
-            class="h-32 w-32"
-          />
+        class="flex flex-wrap items-center justify-center gap-10 lg:gap-20 pointer-events-none px-2"
+      >
+        <img
+          src="/assets/sponsors/king-biryani-edited.webp"
+          alt="King Biryani"
+          class="h-32 w-32"
+        />
+        <img
+          src="/assets/sponsors/samadhan.webp"
+          alt="SOFTWARE SAMADHAN"
+          class="h-32 w-32"
+        />
+        <img src="/assets/sponsors/sponsor2.webp" alt="KTM" class="h-32 w-32" />
+        <img src="/assets/sponsors/ubore.png" alt="URBORE" class="h-32 w-32" />
+        <img
+          src="/assets/sponsors/swaglok.webp"
+          alt="Swaglok Merchandise Partner"
+          class="h-32 w-32"
+        />
       </div>
     </section>
   </div>
@@ -374,7 +380,7 @@ import Members from "../components/Members.astro";
     background-color: #fff5fd;
     filter: grayscale(0%);
   }
-  #background-vid img{
+  #background-vid img {
     position: relative;
     top: 0;
     /* margin-left: 50%;
