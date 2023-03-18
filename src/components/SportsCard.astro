@@ -20,25 +20,25 @@ const {
 
 <section
   id={sportNo}
-  class="font-poppins border-t-2 border-b-2 px-3 py-2 text-slate-100 flex flex-col"
+  class="font-poppins border-t-2 border-b-2 px-3 py-2 text-slate-100 flex flex-col w-full"
 >
   <div class="top">
     <p class="text-center pb-2"><strong>GAME {sportNo}</strong></p>
     <h1 id="title"><span class="text-slate-400">Title:</span> {title}</h1>
     <p id="date"><span class="text-slate-400">Date:</span> {date}</p>
     <p id="venue"><span class="text-slate-400">Venue:</span> {venue}</p>
-    <p id="coordinators" title={coordinators.toString()} class="truncate">
-      <span class="text-slate-400">Coordinators:</span>
-      {
-        coordinators.map((member) => {
-          if (coordinators.indexOf(member) !== 0) {
-            return `, ${member}`;
-          } else {
-            return `${member}`;
-          }
-        })
-      }
-    </p>
+  </div>
+  <div id="coord-container" class="top-20">
+    <details class="z-30 relative">
+      <summary class="">View Coordinators</summary>
+      <ul class="flex flex-col ml-7">
+        {
+          coordinators.map((member) => {
+            return <li class="">{member}</li>;
+          })
+        }
+      </ul>
+    </details>
   </div>
   <div id="bottom" class="self-center py-3">
     {
