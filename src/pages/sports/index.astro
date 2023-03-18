@@ -1,5 +1,5 @@
 ---
-import NonHomeLayout from "../../layouts/NonHomeLayout.astro";
+import NonHomeLayout from "../../layouts/Layout.astro";
 import SportsCard from "../../components/SportsCard.astro";
 ---
 
@@ -9,14 +9,14 @@ import SportsCard from "../../components/SportsCard.astro";
     id="wrapper"
     class="w-full mx-auto md:max-w-[1300px] mt-16 md:mt-[5em] px-2 md:px-10 sm:pb-10"
   >
-    <h1
-      class="text-5xl font-playfair font-black text-center text-slate-100 pb-10"
-    >
+    <h1 class="text-5xl font-playfair font-black text-center text-black pb-10">
       Explore Sports Events
     </h1>
     <main>
       <section id="group1" class="pb-2">
-        <p class="text-white font-playfair text-2xl">OUTDOOR GAMES</p>
+        <p class="text-black sm:ml-[5em] font-black font-playfair text-2xl">
+          OUTDOOR GAMES
+        </p>
       </section>
       <div
         id="contest-container"
@@ -188,7 +188,9 @@ import SportsCard from "../../components/SportsCard.astro";
       </div>
 
       <section id="group1" class="pb-2">
-        <p class="text-white font-playfair text-2xl">INDOOR GAMES</p>
+        <p class="text-black font-black sm:ml-[5em] font-playfair text-2xl">
+          INDOOR GAMES
+        </p>
       </section>
       <div
         id="contest-container"
@@ -243,12 +245,12 @@ import SportsCard from "../../components/SportsCard.astro";
     bottom: 0;
     height: 100vh;
     width: 100%;
-    background-image: url("/assets/basketball2.webp");
+    background-image: url("/assets/ecstasy.webp");
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
     background-position: center;
-    filter: grayscale(10%);
-    filter: brightness(80%);
+    filter: grayscale(30%);
+    filter: brightness(100%);
   }
 </style>

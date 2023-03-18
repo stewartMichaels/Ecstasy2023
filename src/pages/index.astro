@@ -7,12 +7,16 @@ import Members from "../components/Members.astro";
 <Layout>
   <div
     id="background-vid"
-    class="h-[100vh] w-[100vw] absolute -z-10 top-0 bg-white"
+    class="h-[100vh] absolute w-[100vw] -z-10 top-0 bg-white"
   >
-    <!-- <img src="" alt="ecstasy hero section" class="h-auto w-full"> -->
+    <!-- <img
+      src="/assets/ecstasy.webp"
+      alt="ecstasy hero section"
+      class="brightness-[90%] h-[100%] w-[100%]"
+    /> -->
   </div>
   <!--HERO SECTION -->
-  <div id="wrapper" class="relative pt-20 md:py-[12em] pb-[3em]">
+  <div id="wrapper" class="relative pt-20 md:py-[11.5em] pb-[3em]">
     <div id="background-img" class="-z-30"></div>
     <main
       id="primary-content"
@@ -32,7 +36,7 @@ import Members from "../components/Members.astro";
           </p>
         </section>
         <p
-          class="w-full border-t-2 border-b-2 border-black px-6 py-3 font-poppins font-medium lg:w-[50%] border-l-4 border-r-4 text-center text-black text-[0.9rem] md:text-[1.1rem] self-center rounded-xl"
+          class="w-full border-t-2 border-b-2 border-black px-6 py-3 font-poppins font-medium lg:w-[50%] border-l-4 border-r-4 text-center text-black text-[0.9rem] md:text-[1.1rem] self-center rounded-xl backdrop-blur-sm"
         >
           Get ready for <strong>Ecstasy 2023</strong> - a cultural fest with trending
           activities, amazing performances and a vibe that rocks! Don't miss out
@@ -50,7 +54,7 @@ import Members from "../components/Members.astro";
   <!--EVENT CARD SECTION -->
   <div
     id="explore-container"
-    class="lg:py-10 relative overflow-clip border-black border-t-4 border-b-4"
+    class="lg:py-10 relative overflow-clip border-black border-t-2 border-b-2"
   >
     <img
       id="flower"
@@ -380,9 +384,15 @@ import Members from "../components/Members.astro";
     background-color: #fff5fd;
     filter: grayscale(0%);
   }
-  #background-vid img {
-    position: relative;
+  #background-vid {
+    position: absolute;
     top: 0;
+    bottom: 0;
+    /* background-image: url("/assets/ecstasy.webp"); */
+    background-position: center;
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    background-size: cover;
     /* margin-left: 50%;
     transform: translate(-50%,-50%); */
   }

@@ -22,14 +22,17 @@ const {
 
 <section
   id={sportNo}
-  class="font-poppins border-t-2 border-b-2 px-3 py-2 text-slate-100 flex flex-col w-full"
+  class="font-poppins border-black border-t-2 border-b-2 px-3 py-2 text-black flex flex-col w-full"
 >
   <div class="top">
     <p class="text-center pb-2"><strong>GAME {sportNo}</strong></p>
-    <h1 id="title"><span class="text-slate-400">Title:</span> {title}</h1>
-    <p id="date"><span class="text-slate-400">Date:</span> {date}</p>
-    <p id="time"><span class="text-slate-400">Time:</span> {time}</p>
-    <p id="venue"><span class="text-slate-400">Venue:</span> {venue}</p>
+    <h1 id="title">
+      <span class="text-slate-900">Title:</span>
+      <span class="font-black">{title}</span>
+    </h1>
+    <p id="date"><span class="text-slate-900">Date:</span> {date}</p>
+    <p id="time"><span class="text-slate-900">Time:</span> {time}</p>
+    <p id="venue"><span class="text-slate-900">Venue:</span> {venue}</p>
   </div>
   <div id="coord-container" class="top-20">
     <details class="z-30 relative">
@@ -49,7 +52,7 @@ const {
         <a
           target="_blank"
           href={regLink}
-          class="relative self-center bg-slate-300 text-black font-black px-2 py-1 rounded"
+          class="relative self-center bg-slate-600 text-white font-black px-2 py-1 rounded"
         >
           REGISTER
         </a>
@@ -57,7 +60,7 @@ const {
         <a
           target="_blank"
           href={regLink}
-          class="relative self-center bg-slate-600 text-black font-black px-2 py-1 rounded pointer-events-none"
+          class="relative self-center bg-slate-300 text-white font-black px-2 py-1 rounded pointer-events-none"
         >
           REGISTER
         </a>
@@ -68,6 +71,6 @@ const {
 
 <style>
   section {
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
   }
 </style>

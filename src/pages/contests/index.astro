@@ -1,5 +1,5 @@
 ---
-import NonHomeLayout from "../../layouts/NonHomeLayout.astro";
+import NonHomeLayout from "../../layouts/Layout.astro";
 import ContestCard from "../../components/ContestCard.astro";
 ---
 
@@ -9,7 +9,7 @@ import ContestCard from "../../components/ContestCard.astro";
     id="wrapper"
     class="w-full mx-auto md:max-w-[1300px] mt-16 md:mt-[5em] px-2 md:px-10 sm:pb-10"
   >
-    <h1 class="text-5xl font-playfair font-black text-center text-white">
+    <h1 class="text-5xl font-playfair font-black text-center text-black">
       Explore The Contests
     </h1>
 
@@ -106,7 +106,7 @@ import ContestCard from "../../components/ContestCard.astro";
           coordinators={[]}
         />
         <ContestCard
-          contestNo="10"
+          contestNo="11"
           title="Rangoli Competition"
           date="12/03/23"
           venue="N/A"
@@ -114,7 +114,7 @@ import ContestCard from "../../components/ContestCard.astro";
           coordinators={[]}
         />
         <ContestCard
-          contestNo="10"
+          contestNo="12"
           title="Salad Competition"
           date="12/03/23"
           venue="N/A"
@@ -133,12 +133,12 @@ import ContestCard from "../../components/ContestCard.astro";
     bottom: 0;
     height: 100vh;
     width: 100%;
-    background-image: url("/assets/neon.webp");
+    background-image: url("/assets/ecstasy.webp");
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
     background-position: center;
     filter: grayscale(30%);
-    filter: brightness(75%);
+    filter: brightness(100%);
   }
 </style>

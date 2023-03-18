@@ -1,5 +1,5 @@
 ---
-import NonHomeLayout from "../../layouts/NonHomeLayout.astro";
+import NonHomeLayout from "../../layouts/Layout.astro";
 import Card from "../../components/Card.astro";
 ---
 
@@ -9,7 +9,7 @@ import Card from "../../components/Card.astro";
     id="wrapper"
     class="w-full mx-auto md:max-w-[1300px] mt-16 md:mt-[5em] px-2 md:px-10 sm:pb-10"
   >
-    <h1 class="text-5xl font-black font-playfair text-center text-slate-100">
+    <h1 class="text-5xl font-black font-playfair text-center text-black">
       Explore The Events
     </h1>
 
@@ -104,7 +104,7 @@ import Card from "../../components/Card.astro";
 
         <!-- KTM onTrack -->
         <Card
-          eventNo="1"
+          eventNo="10"
           title="KTM onTrack"
           date="24/03/23"
           venue="CIT Campus"
@@ -114,7 +114,7 @@ import Card from "../../components/Card.astro";
 
         <!-- Concert -->
         <Card
-          eventNo="1"
+          eventNo="11"
           title="Concert"
           date="24/03/23"
           venue="CIT Campus"
@@ -132,12 +132,12 @@ import Card from "../../components/Card.astro";
     bottom: 0;
     height: 100vh;
     width: 100%;
-    background-image: url("/assets/party2.webp");
+    background-image: url("/assets/ecstasy.webp");
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
     background-position: center;
     filter: grayscale(30%);
-    filter: brightness(90%);
+    filter: brightness(100%);
   }
 </style>
