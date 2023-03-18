@@ -48,7 +48,7 @@ import Members from "../components/Members.astro";
     </section> -->
 
   <!--EVENT CARD SECTION -->
-  <div id="explore-container" class="lg:py-10 relative overflow-clip">
+  <div id="explore-container" class="lg:py-10 relative overflow-clip border-black border-t-4 border-b-4">
     <img
       id="flower"
       src="/assets/image1.webp"
@@ -90,9 +90,9 @@ import Members from "../components/Members.astro";
       </section>
       <section
         id="right-col"
-        class="flex grow lg:grow-0 flex-col justify-center lg:grid lg:grid-cols-2 gap-[0.3em] lg:gap-[1em]"
+        class="flex grow lg:grow-0 flex-col justify-center lg:grid lg:grid-cols-2 gap-[0.3em] lg:gap-1 lg:border-black lg:border-4 p-1 rounded-md"
       >
-        <div class="link-card card1 items-end font-poppins text-[0.9rem]">
+        <div class="link-card card1 items-end font-poppins text-[0.9rem] rounded-md ">
           <a href="./events">
             <h2>
               <strong>CULTURAL EVENTS</strong>
@@ -102,7 +102,7 @@ import Members from "../components/Members.astro";
           </a>
         </div>
         <div
-          class="link-card card2 h-auto items-end font-poppins text-[0.9rem]"
+          class="link-card card2 h-auto items-end font-poppins text-[0.9rem] rounded-md"
         >
           <a href="./contests">
             <h2>
@@ -113,7 +113,7 @@ import Members from "../components/Members.astro";
           </a>
         </div>
         <div
-          class="link-card card3 h-auto items-end overflow-hidden font-poppins text-[0.9rem]"
+          class="link-card card3 h-auto items-end overflow-hidden font-poppins text-[0.9rem] rounded-md"
         >
           <a href="./sports" class="">
             <h2>
@@ -225,7 +225,7 @@ import Members from "../components/Members.astro";
   <!--END -->
 
   <section id="margin" class="flex item-center justify-center">
-    <div class="border-2 border-slate-100 w-[100%] md:w-[100%] rounded-full">
+    <div class="border-2 border-slate-100 w-[100%] md:w-[80%] rounded-full">
     </div>
   </section>
 
@@ -238,7 +238,7 @@ import Members from "../components/Members.astro";
   <section class="flex item-center justify-center">
     <div
       id="margin"
-      class="border-2 border-slate-100 w-[100%] md:w-[100%] rounded-full"
+      class="border-2 border-slate-100 w-[100%] md:w-[80%] rounded-full"
     >
     </div>
   </section>
@@ -303,23 +303,27 @@ import Members from "../components/Members.astro";
   #right-col {
     grid-template-areas:
       "left right"
-      "left bottom";
+      "bottom bottom";
   }
   .card1 {
-    grid-area: left;
     background-image: url("/assets/party.webp");
-    background-position: -50px -110px;
+    background-position: center;
+    background-size: 100%;
     background-repeat: no-repeat;
     filter: grayscale(10%);
   }
   .card2 {
     background-image: url("/assets/contest.webp");
-    background-position: -50px -130px;
+    background-position: center;
+    background-size: 100%;
     filter: grayscale(10%);
   }
   .card3 {
+    grid-area: bottom;
     background-image: url("/assets/football.webp");
-    background-position: -50px -150px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
     filter: grayscale(10%);
   }
 
@@ -330,9 +334,8 @@ import Members from "../components/Members.astro";
     padding: 0.25rem;
     object-fit: contain;
     background-color: white;
-    background-size: 150%;
-    border: 4px solid black;
-    border-radius: 0.6rem;
+    /* border: 4px solid black; */
+    /* border-radius: 0.6rem; */
     transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
     transition: background-size 0.2s ease-in-out;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -361,7 +364,7 @@ import Members from "../components/Members.astro";
   }
   .link-card:is(:hover, :focus-within) {
     /* background-position: 0%; */
-    background-size: 170%;
+    background-size: 150%;
   }
   .link-card:is(:hover, :focus-within) h2 {
     color: #3b82f6;
