@@ -4,6 +4,7 @@ export interface Props {
   title: string;
   date: string;
   venue: string;
+  time?: string;
   coordinators?: string[];
   regLink?: string;
 }
@@ -13,6 +14,7 @@ const {
   title,
   date,
   venue,
+  time,
   coordinators,
   regLink = null,
 } = Astro.props;
@@ -29,6 +31,7 @@ const {
       {title}
     </h1>
     <p id="date"><span class="text-slate-400">Date:</span> {date}</p>
+    <p id="time"><span class="text-slate-400">Time:</span> {time}</p>
     <p id="venue"><span class="text-slate-400">Venue:</span> {venue}</p>
   </div>
   <div id="coord-container" class="top-20">
