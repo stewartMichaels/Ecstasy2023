@@ -71,11 +71,13 @@ import Members from "../components/Members.astro";
       alt="flower"
       class="h-[30.5em] absolute -z-30 -left-[15em] -top-2"
     />
-    <h1
-      class="font-playfair text-center lg:hidden text-black font-light text-7xl pt-5 z-20"
-    >
-      <span class="bg-white bg-opacity-60 px-3 rounded-full">EXPLORE!!</span>
-    </h1>
+    <div id="explore-mobile-header" class="pt-5">
+      <h1
+        class="font-playfair text-center lg:hidden text-black font-light text-6xl z-20"
+      >
+        <span class="bg-white bg-opacity-60 px-4 rounded-full">EXPLORE!!</span>
+      </h1>
+    </div>
     <div
       id="block-continer"
       class="px-2 md:px-5 h-[50vh] mx-auto flex flex-col justify-center gap-[2em] items-center"
@@ -98,10 +100,10 @@ import Members from "../components/Members.astro";
       </section>
       <section
         id="right-col"
-        class="flex grow-0 flex-col justify-center lg:grid lg:grid-cols-3 gap-[0.3em] lg:gap-5 lg:border-black lg:border-4 p-1 rounded-md w-full sm:w-[65%]"
+        class="flex grow-0 flex-col justify-center lg:grid lg:grid-cols-3 gap-[0.3em] lg:gap-1 lg:border-black lg:border-4 rounded-lg p-1 w-full sm:w-[65%]"
       >
         <div
-          class="link-card card1 items-end font-poppins text-[0.9rem] rounded-md"
+          class="link-card card1 items-end font-poppins text-[0.9rem] rounded-md sm:rounded-none"
         >
           <a href="./events">
             <h2>
@@ -112,7 +114,7 @@ import Members from "../components/Members.astro";
           </a>
         </div>
         <div
-          class="link-card card2 h-auto items-end font-poppins text-[0.9rem] rounded-md"
+          class="link-card card2 h-auto items-end font-poppins text-[0.9rem] rounded-md sm:rounded-none"
         >
           <a href="./contests">
             <h2>
@@ -123,7 +125,7 @@ import Members from "../components/Members.astro";
           </a>
         </div>
         <div
-          class="link-card card3 h-auto items-end overflow-hidden font-poppins text-[0.9rem] rounded-md"
+          class="link-card card3 h-auto items-end overflow-hidden font-poppins text-[0.9rem] rounded-md sm:rounded-none"
         >
           <a href="./sports" class="">
             <h2>
@@ -340,7 +342,7 @@ import Members from "../components/Members.astro";
     padding: 0.25rem;
     object-fit: contain;
     background-color: white;
-    border: 4px solid black;
+    border: 2px solid black;
     /* border-radius: 0.6rem; */
     transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
     transition: background-size 0.2s ease-in-out;
@@ -356,7 +358,7 @@ import Members from "../components/Members.astro";
     border-radius: 0.35rem;
     color: #111;
     background-color: white;
-    opacity: 0.8;
+    opacity: 0.95;
   }
   .link-card > h2 {
     margin: 0;
