@@ -57,7 +57,7 @@ import Members from "../components/Members.astro";
   <!--EVENT CARD SECTION -->
   <div
     id="explore-container"
-    class="lg:py-10 relative overflow-clip border-black border-t-4 border-b-2"
+    class="lg:py-0 relative overflow-clip border-black border-t-4 border-b-2"
   >
     <img
       id="flower"
@@ -74,33 +74,31 @@ import Members from "../components/Members.astro";
     <h1
       class="font-playfair text-center lg:hidden text-black font-light text-7xl pt-5 z-20"
     >
-      EXPLORE!!
+      <span class="bg-white bg-opacity-60 px-3 rounded-full">EXPLORE!!</span>
     </h1>
     <div
       id="block-continer"
-      class="px-2 md:px-5 h-[50vh] mx-auto flex justify-center gap-[5em]"
+      class="px-2 md:px-5 h-[50vh] mx-auto flex flex-col justify-center gap-[2em] items-center"
     >
-      <section class="self-center hidden lg:flex lg:flex-col">
-        <h1
-          class="font-playfair text-black font-light text-7xl pb-3 self-center"
-        >
+      <section class="self-center hidden lg:flex lg:flex-col z-30">
+        <h1 class="font-playfair text-black font-light text-7xl self-center">
           EXPLORE!!
         </h1>
-        <p class="text-3xl font-light font-poppins self-center">
+        <p class="text-2xl font-light font-poppins self-center">
           PARTICIPATE IN VARIOUS
         </p>
-        <p class="text-2xl font-light font-poppins pb-5 self-center">
+        <p class="text-xl font-light font-poppins pb-2 self-center">
           CONTESTS AND EVENTS.
         </p>
         <a
           href="./about"
-          class="bg-red-300 shadow-black shadow-sm hover:shadow-sm border-black border-2 transition-shadow px-16 py-2 font-black font-playfair rounded-full text-2xl self-center"
+          class="bg-red-300 shadow-black shadow-sm hover:shadow-sm border-black border-2 transition-shadow px-10 py-1 font-black font-playfair rounded-full text-2xl self-center"
           >INFO.</a
         >
       </section>
       <section
         id="right-col"
-        class="flex grow lg:grow-0 flex-col justify-center lg:grid lg:grid-cols-2 gap-[0.3em] lg:gap-1 lg:border-black lg:border-4 p-1 rounded-md"
+        class="flex grow-0 flex-col justify-center lg:grid lg:grid-cols-3 gap-[0.3em] lg:gap-5 lg:border-black lg:border-4 p-1 rounded-md w-full sm:w-[65%]"
       >
         <div
           class="link-card card1 items-end font-poppins text-[0.9rem] rounded-md"
@@ -313,28 +311,23 @@ import Members from "../components/Members.astro";
     padding: 1rem;
     border-radius: 0.4rem;
   }
-  #right-col {
-    grid-template-areas:
-      "left right"
-      "bottom bottom";
-  }
+
   .card1 {
     background-image: url("/assets/party.webp");
     background-position: center;
-    background-size: 100%;
+    background-size: 200%;
     background-repeat: no-repeat;
     filter: grayscale(10%);
   }
   .card2 {
     background-image: url("/assets/contest.webp");
     background-position: center;
-    background-size: 100%;
+    background-size: 200%;
     filter: grayscale(10%);
   }
   .card3 {
-    grid-area: bottom;
     background-image: url("/assets/football.webp");
-    background-size: 100%;
+    background-size: 200%;
     background-repeat: no-repeat;
     background-position: center;
     filter: grayscale(10%);
